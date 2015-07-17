@@ -5,14 +5,15 @@
   rand.unif(n, min = 0, max = 1)
 }
 \arguments{
-  \item{n}{Number of observations}
+  \item{n}{Number of observations.}
 
-  \item{min}{lower limit of the distribution}
+  \item{min}{lower limit of the distribution.}
 
-  \item{max}{upper limit of the distribution}
+  \item{max}{upper limit of the distribution.}
 }
 \description{
-  Generate Random Uniform Variables
+  Generates pseudo-random variables from a Uniform
+  distribution, using the Wichmannhill.
 }
 \author{
   Tyler Hunt \email{tyler@psychoanalytix.com}

@@ -1,13 +1,22 @@
 #' Golden Section Search Optimization
+#' 
+#' @description 
+#' A method used for locating the optimum value of a function. The technique utilizes the golden ratio to successively narrow the range of values for which the optimum is found.
 #'
 #' @param f The function to be optimized
 #' @param lo Lower estimate
 #' @param hi Upper estimate
 #' @param tol Level of tolerance desired for optimization
+#' 
+#' @return a estimated optimal value of the function
+#' @return f(a) function value at the optimal value
 #'
+#' @author Tyler Hunt \email{tyler@@psychoanalytix.com}
+#' 
+#' @examples
+#' gold.sect(sin, 1/2, pi/2)
 #'
-#" @export
-
+#' @export
 
 gold.sect <- function(f,lo,hi,tol=0.0000001){
 	g = 1-(sqrt(5)-1)/2

@@ -2,11 +2,19 @@
 #' 
 #' @description Find the location of values around a specified value
 #' 
-#' @param x a vector, matrix, or data frame.
+#' @param x a vector.
 #' @param value specified value
 #' 
 #' @author Tyler Hunt \email{tyler@@psychoanalytix.com} 
-#' @export
+#' 
+#' @return lo the maximum value of x that is less than or equal to the value parameter.
+#' @return hi the minimum value of x that is greater than or equal to the value parameter.
+#' 
+#' @examples
+#' x = rnorm(50, 3, 7)
+#' value = 15
+#' 
+#' @export 
 
 around<-function(x, value){
   x<-sort(x)
